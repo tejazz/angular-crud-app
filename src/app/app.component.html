@@ -1,0 +1,27 @@
+<h2>Test Application</h2>
+
+<h4>Add/Update Data</h4>
+<form>
+	Email: <input type="text" [(ngModel)]="callSingleUser.userEmail" name="email"><br> Password:
+	<input type="text" [(ngModel)]="callSingleUser.userPassword" name="password">
+	<button (click)="postCurrent(callSingleUser)" [hidden]="!updateBtn">Submit</button>
+  <button (click)="updatePost(callSingleUser._id)">Update</button>
+</form>
+
+<br><br>
+
+<!--
+<h4>Update Data</h4>
+<form>
+	Email: <input type="text" [(ngModel)]="callSingleUser.userEmail" name="email"><br> Password:
+	<input type="text" [(ngModel)]="callSingleUser.userPassword" name="password">
+	
+</form>-->
+<!--
+<br><br>-->
+
+<div *ngFor="let item of userData">
+	{{item.userEmail}}
+	<button (click)='getSinglePost(item._id)'>Update</button>
+	<button (click)='deletePost(item._id)'>Delete</button>
+</div>
