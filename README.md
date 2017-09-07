@@ -1,4 +1,4 @@
-# Angular-4 CRUD Application
+# Angular CRUD Application
 
 Basic Crud Operation in Angular 4.
 
